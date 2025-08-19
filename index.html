@@ -2,45 +2,53 @@
 <html>
   <head>
     <title>Twizzlers Breath's World</title>
-    <link rel="stylesheet" href="style.css"/>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
-  <body>
+  <body class="bg-blue-50 text-gray-800 p-4 font-sans">
     <!-- All content goes here -->
-    <div id="all-contents">
-      <nav>
-        <h1>Twizzlers Breath's World</h1>
-        <ul id="nav-ul">
-          <li class="nav-li">
-            <a href="index.html">Home</a>
+    <div id="all-contents" class="max-w-4xl mx-auto">
+    <nav class="bg-blue-500 p-4 rounded-lg mb-4 shadow-md">
+      <div class="flex justify-between items-center">
+        <h1 class=" text-white text-2xl font-bold">Twizzlers Breath's World</h1>
+        <ul class="flex space-x-4">
+          <li>
+            <a href="index.html" class="text-white hover:text-blue-200 px-3 py-2 rounded">home</a>
           </li>
-          <li class="nav-li">
-            <a href="portfolio.html">portfolio</a>
+          <li>
+            <a href="portfolio.html" class="text-white hover:text-blue-200 px-3 py-2 rounded">portfolio</a>
           </li>
         </ul>
-      </nav>
+       </div>
+    </nav>
 
-      <main>
-        <!-- Sidebar section -->
-         <div class="sidebar">
-          <img class="sidebar-img" src="https://images.ctfassets.net/6pezt69ih962/7IOyG2dTYGCAbFb56ZwoWU/fdea9b9bce4545829a85521a1bff85a7/3_hamilton_1200x600-NYTG.png?h=550&fm=webp&q=90" width="300" height="200"
+      <main class="bg-white rounded-lg shadow-lg p-6">
+        <div class="flex flex-col md:flex-row gap-6">
+        <!-- Sidebar section with image -->
+         <div class="md:w-1/3">
+          <img 
+            class="w-full max-w-xs rounded-lg shadow-md mx-auto" 
+            src="https://images.ctfassets.net/6pezt69ih962/7IOyG2dTYGCAbFb56ZwoWU/fdea9b9bce4545829a85521a1bff85a7/3_hamilton_1200x600-NYTG.png?h=550&fm=webp&q=90" width="300" height="200"
+            alt="Profile picture"
+            />
          </div>
 
          <!-- Content section-->
-          <div class="content">
-            <h2>kryniyah Brown</h2>
-            <p>Student at Covington High</p>
+          <div class="md:w-2/3">
+            <h2 class="text-3xl font-bold text-gray-900 md-2">kryniyah Brown</h2>
+            <p class="text-lg text-gray-600 mb-6">Student at Covington High</p>
           </div>
 
           <!--Interests Section-->
-          <div id="interests">
-            <h3>Interests</h3>
-            <ul>
-              <li>Reading</li>
-              <li>Hamiltion</li>
-              <li>Sleeping</li>
-              <li>Cooking and baking</li>
-              <li>Action movies</li>
+          <div class="border-2 border-gray-300 rounded-lg p-4">
+            <h3 class="text=xl font-semibold mb-3 text-gray-800">Interests</h3>
+            <ul class="space-y-2">
+              <li class="bg-blue-100 px-3 rounded text-blue-800">Reading</li>
+              <li class="bg-pink-100 px-3 py-2 rounded text-pink-800">Hamiltion</li>
+              <li class="bg-green-100 px py-2 rounded text-green-800">Sleeping</li>
+              <li class="bg-orange-100 px-3 py-2 rounded text-orange-800">Cooking and baking</li>
+              <li class="bg-purple-100 px-3 py-2 rounded text-purple-800">Action movies</li>
             </ul>
           </div>
       </main>
