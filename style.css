@@ -22,7 +22,7 @@ nav {
 h1 {
     display: flex;
     align-items: center;
-    color: white;
+    color: #0CAFFF;
     flex: 1;
     margin: 0;
 }
@@ -46,7 +46,7 @@ a{
 
 /* main container area beneath menu */
 main{
-    background: rgb(245, 238, 219)
+    background: #0CAFFF
     display: flex;
     margin-top: 20px;
 }
@@ -67,7 +67,7 @@ main{
 
 /* interests section styles */
 #interests {
-    border: 4px silver ridge;
+    border: 4px #0f52ba
     padding: 8px;
     margin-top: 20px;
 }
@@ -78,7 +78,7 @@ h2, h3 {
 
 /* Portfolio styles */
 .content h1{
-    color: black;
+    color: #F9629F;
 }
 
 #portfolio {
@@ -87,17 +87,19 @@ h2, h3 {
 }
 
 #portfolio li {
-  background: #fff;
+  background: #00CED1;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
 #portfolio li:hover {
-  background: #eee;
+  background: #0CAFFF;
 }
 
 #portfolio a {
   text-decoration: none;
-  color: #454545;
+  color: #1d1160;
 }
+
+
